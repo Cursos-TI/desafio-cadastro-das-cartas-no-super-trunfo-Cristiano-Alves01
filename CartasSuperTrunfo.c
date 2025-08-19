@@ -10,6 +10,8 @@ int main() {
     float area1 = 218.8;
     float pib1 = 54.97;
     int pontosTuristicos1= 35;
+    float densidade1;
+    float pibPerCapita1;
 
     // Carta 2
     char estado2[50] = "Bahia";
@@ -19,6 +21,8 @@ int main() {
     float area2 = 693.8;
     float pib2 = 62.9;
     int pontosTuristicos2 = 78;
+    float densidade2;
+    float pibPerCapita2;
 
     // Entrada Carta 1
     printf("\nCarta 1:\n");
@@ -43,6 +47,14 @@ int main() {
     printf("Número de Pontos Turísticos: ");
     scanf("%d", &pontosTuristicos1);
 
+   // calculo carta 1
+
+   //Cálculo da dencidade polulacional e da pib per capta carta 2
+   densidade1= populacao1 / area1;
+    pibPerCapita1 = (pib1 * 1000000000) / populacao1;
+
+
+
     // Entrada Carta 2
     printf("\nCarta 2:\n");
     printf("Estado: ");
@@ -66,6 +78,13 @@ int main() {
     printf("Número de Pontos Turísticos: ");
     scanf("%d", &pontosTuristicos2);
 
+    //Cálculo da dencidade polulacional e da pib per capta carta 2
+    densidade2 = populacao2 / area2;
+    pibPerCapita2 = (pib2 * 1000000000) / populacao2;
+
+
+
+
     // Exibição Carta 1
     printf("\nCarta 1:\n");
     printf("Estado: %s\n", estado1);
@@ -75,6 +94,10 @@ int main() {
     printf("Área: %.2f \n", area1);
     printf("PIB: %.2f \n", pib1);
     printf("Número de Pontos Turísticos: %d\n", pontosTuristicos1);
+    printf("Densidade Populacional: %.2f hab/km²\n", densidade1);
+    printf("PIB per Capita: %.2f reais\n", pibPerCapita1);
+    printf("Densidade Populacional: %.2f hab/km²\n", densidade1);
+    printf("PIB per Capita: %.2f reais\n", pibPerCapita1);
 
     // Exibição Carta 2
     printf("\nCarta 2:\n");
@@ -85,6 +108,8 @@ int main() {
     printf("Área: %.f \n", area2);
     printf("PIB: %.2f \n", pib2);
     printf("Número de Pontos Turísticos: %d\n", pontosTuristicos2);
+    printf("Densidade Populacional: %.2f hab/km²\n", densidade2);
+    printf("PIB per Capita: %.2f reais\n", pibPerCapita2);
 
 
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
